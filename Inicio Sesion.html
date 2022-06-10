@@ -1,0 +1,48 @@
+ <meta charset="UTF-8">
+
+ <h1> Programa de adivinanza </h1>
+
+ <script>
+
+  function saltarLinea() {
+
+	document.write("<br>");
+  	document.write("<br>");
+
+  }
+ 
+  function   imprimir(mensaje) {
+
+	document.write(mensaje);
+  	saltarLinea(); 
+
+  }
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+    var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+    var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+    var intentos = 3;
+    var contador = 1;
+
+        while (contador <= intentos) {
+
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+        
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            break;
+
+         } 
+        
+        else {
+        
+            alert("inicio de sesión inválido. Favor intente de nuevo");
+            
+       }
+
+        contador++
+    }
+ </script>
+ 

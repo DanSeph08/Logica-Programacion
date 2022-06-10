@@ -1,0 +1,35 @@
+ <meta charset="UTF-8">
+
+ <h1> Programa de adivinanza </h1>
+
+ <script>
+
+  function saltarLinea() {
+
+	document.write("<br>");
+  	document.write("<br>");
+
+  }
+ 
+  function   imprimir(mensaje) {
+
+	document.write(mensaje);
+  	saltarLinea(); 
+
+  }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde Si o No");
+
+  if (edad >= 18 && (tieneLicencia = "Si")) {
+
+      imprimir("Puedes conducir");
+
+  }
+
+  else
+
+      imprimir("No puedes conducir")
+      
+ </script>
+ 
